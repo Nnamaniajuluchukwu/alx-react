@@ -1,18 +1,20 @@
 {
-  "name": "task_0",
+  "name": "task_1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack serve --mode development"
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
   },
   "devDependencies": {
-    "webpack": "^5.82.1",
-    "webpack-cli": "^4.10.0"
+    "webpack": "^5.88.2"
+
   },
   "dependencies": {
-    "jquery": "^3.7.0"
+    "lodash": "^4.17.21",
+    "jquery": "^3.7.1"
   },
   "keywords": [],
   "author": "",
