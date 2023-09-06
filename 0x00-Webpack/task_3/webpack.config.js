@@ -30,9 +30,8 @@ module.exports = {
   },
   devServer: {
     port: 8564,
-    contentBase: path.resolve(__dirname, 'public'),
+    static: path.resolve(__dirname, 'public'),
     open: true,
-    // static: path.resolve(__dirname, 'public'), for newer version
   },
   devtool: 'inline-source-map',
   module: {
