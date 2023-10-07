@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component should match the snapshot 1`] = `
+<div>
+  <header
+    className="App-header"
+  >
+    <img
+      alt="holberton logo"
+      src="holberton_logo.jpg"
+    />
+    <h1>
+      School dashboard
+    </h1>
+  </header>
+  <body
+    className="App-body"
+  >
+    <p>
+      Login to access the full dashboard
+    </p>
+    <label
+      for="email"
+    >
+      Email 
+    </label>
+    <input
+      id="email"
+      type="email"
+    />
+    <label
+      for="password"
+    >
+       Password 
+    </label>
+    <input
+      id="password"
+      type="password"
+    />
+    <button
+      type="submit"
+    >
+      OK
+    </button>
+  </body>
+  <footer
+    className="App-footer"
+  >
+    Copyright 
+    2023
+     - 
+    Holberton School main dashboard
+  </footer>
+</div>
+`;
+
+exports[`Notifications Component should match the snapshot 1`] = `
+<div
+  className="Notifications"
+>
+  <p>
+    Here is the list of notifications
+  </p>
+  <ul>
+    <li
+      data-priority="default"
+    >
+      New course available
+    </li>
+    <li
+      data-priority="urgent"
+    >
+      New resume available
+    </li>
+    <li
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<strong>Urgent requirement</strong> - complete by EOD",
+        }
+      }
+    />
+  </ul>
+  <button
+    aria-label="Close"
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#fff",
+        "float": "right",
+        "marginRight": "-0.5em",
+        "marginTop": "-9.5em",
+      }
+    }
+  >
+    <img
+      alt="close icon"
+      height="15px"
+      src="close-button.png"
+      width="13px"
+    />
+  </button>
+</div>
+`;
