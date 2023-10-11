@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Notifications from '../Notifications/Notifications';
+import Notifications from './Notifications';
 import toJson from 'enzyme-to-json';
 
 
