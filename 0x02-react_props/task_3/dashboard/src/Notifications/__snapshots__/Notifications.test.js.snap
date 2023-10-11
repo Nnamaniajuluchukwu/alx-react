@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Notifications Component should match the snapshot 1`] = `
+<div
+  className="Notifications"
+>
+  <p>
+    Here is the list of notifications
+  </p>
+  <ul>
+    <NotificationItem
+      type="default"
+      value="New course available"
+    />
+    <NotificationItem
+      type="urgent"
+      value="New resume available"
+    />
+    <NotificationItem
+      html={
+        Object {
+          "__html": "<strong>Urgent requirement</strong> - complete by EOD",
+        }
+      }
+    />
+  </ul>
+  <button
+    aria-label="Close"
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#fff",
+        "float": "right",
+        "marginRight": "-0.5em",
+        "marginTop": "-9.5em",
+      }
+    }
+  >
+    <img
+      alt="close icon"
+      height="15px"
+      src="mock-file"
+      width="13px"
+    />
+  </button>
+</div>
+`;
