@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-// import toJson from 'enzyme-to-json';
+import toJson from 'enzyme-to-json';
 import App from './App';
 
 
@@ -11,8 +11,8 @@ describe('App Component', () => {
         expect(wrapper.exists()).toBeTruthy();
     });
 
-    // it('should match the snapshot', () => {
-    //     const wrapper = shallow(<App />);
-    //     expect(toJson(wrapper)).toMatchSnapshot();
-    // });
+    it('should match the snapshot', () => {
+        const wrapper = shallow(<App />);
+        expect(toJson(wrapper)).toMatchSnapshot();
+    });
 });

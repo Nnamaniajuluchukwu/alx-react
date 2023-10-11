@@ -1,6 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Notifications from '../Notifications/Notifications';
+import toJson from 'enzyme-to-json';
+
 
 describe('Notifications Component', () => {
     it('should render without crashing', () => {
