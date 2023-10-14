@@ -1,3 +1,7 @@
+:root {
+    --font-family-general: Arial, Helvetica, sans-serif;
+}
+
 .App-footer {
     text-align: center;
     padding: 1rem;
