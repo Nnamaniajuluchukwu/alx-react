@@ -1,0 +1,8 @@
+:root {
+  --font-family-general: Arial, Helvetica, sans-serif;
+}
+
+.App {
+  height: 100vh;
+  max-width: 100vw;
+}

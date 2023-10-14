@@ -1,0 +1,12 @@
+
+.App-body {
+    font-size: 1rem;
+    font-family: var(--font-family-general);
+    margin: auto;
+    height: 23rem;
+    padding: 3rem;
+}
+  
+.App-body input {
+    margin-right: 5px;
+}

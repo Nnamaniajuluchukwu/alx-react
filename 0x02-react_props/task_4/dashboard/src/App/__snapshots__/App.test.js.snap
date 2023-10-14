@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component should match the snapshot 1`] = `
+<Fragment>
+  <Notifications />
+  <div
+    className="App"
+  >
+    <Header />
+    <Login />
+    <Footer />
+  </div>
+</Fragment>
+`;
