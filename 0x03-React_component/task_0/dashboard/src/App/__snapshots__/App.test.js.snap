@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component should match the snapshot 1`] = `
+<Fragment>
+  <Notifications
+    displayDrawer={false}
+    listNotification={
+      Array [
+        Object {
+          "id": 1,
+          "type": "default",
+          "value": "new course available",
+        },
+        Object {
+          "id": 2,
+          "type": "urgent",
+          "value": "New resume available",
+        },
+        Object {
+          "html": Object {
+            "__html": "<strong>Urgent requirement</strong> - complete by EOD",
+          },
+          "id": 3,
+          "type": "",
+        },
+      ]
+    }
+  />
+  <div
+    className="App"
+  >
+    <Header />
+    <Login />
+    <Footer />
+  </div>
+</Fragment>
+`;
