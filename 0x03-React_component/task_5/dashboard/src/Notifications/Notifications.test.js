@@ -77,4 +77,27 @@ describe('Notification with listNotifications', () => {
   
         consoleLogSpy.mockRestore();
     });
+
+    it('should not rerender with the same list', () => {
+        const listNotification = [
+          { id: 1, type: 'default', value: 'Notification 1' },
+          { id: 2, type: 'urgent', value: 'Notification 2' },
+        ];
+        const wrapper = shallow(<Notifications listNotification={listNotification} />);
+        const shouldUpdate = wrapper.instance().shouldComponentUpdate({ listNotification }); // Call shouldComponentUpdate
+        expect(shouldUpdate).toBe(false);
+      });
+
+    it('should rerender with a longer list', () => {
+        const initialList = [
+          { id: 1, type: 'default', value: 'Notification 1' },
+        ];
+        const updatedList = [
+          { id: 1, type: 'default', value: 'Notification 1' },
+          { id: 2, type: 'urgent', value: 'Notification 2' },
+        ];
+        const wrapper = shallow(<Notifications listNotification={initialList} />);
+        const shouldUpdate = wrapper.instance().shouldComponentUpdate({ listNotification: updatedList }); // Call shouldComponentUpdate
+        expect(shouldUpdate).toBe(true);
+      });
 })

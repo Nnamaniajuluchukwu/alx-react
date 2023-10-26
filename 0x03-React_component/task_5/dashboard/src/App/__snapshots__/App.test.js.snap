@@ -30,7 +30,18 @@ exports[`App Component should match the snapshot 1`] = `
     className="App"
   >
     <Header />
-    <Login />
+    <BodySectionWithMarginBottom
+      title="Log in to continue"
+    >
+      <Login />
+    </BodySectionWithMarginBottom>
+    <BodySection
+      title="News from the School"
+    >
+      <p>
+         I love you
+      </p>
+    </BodySection>
     <Footer />
   </div>
 </Fragment>
