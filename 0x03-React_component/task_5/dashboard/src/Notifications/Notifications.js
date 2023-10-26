@@ -10,6 +10,17 @@ export default class Notifications extends Component {
   constructor(props) {
     super(props);
     this.markAsRead = this.markAsRead.bind(this);
+    this.prevListLength = props.listNotification.length; // Store the initial list length
+  }
+
+  shouldComponentUpdate(nextProps) {
+    // Only update if the new listNotification has a longer list of elements
+    return nextProps.listNotification.length > this.prevListLength;
+  }
+
+  componentDidUpdate() {
+    // Update the stored list length after the component has updated
+    this.prevListLength = this.props.listNotification.length;
   }
 
   markAsRead(id) {
