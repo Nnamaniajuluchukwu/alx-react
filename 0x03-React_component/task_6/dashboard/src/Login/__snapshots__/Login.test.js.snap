@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login Component should match the snapshot 1`] = `
+<Fragment>
+  <div
+    className="App-body"
+  >
+    <p>
+      Login to access the full dashboard
+    </p>
+    <label
+      htmlFor="email"
+    >
+      Email 
+    </label>
+    <input
+      autoComplete="on"
+      id="email"
+      type="email"
+    />
+    <label
+      htmlFor="password"
+    >
+       Password 
+    </label>
+    <input
+      autoComplete="on"
+      id="password"
+      type="password"
+    />
+    <button
+      type="submit"
+    >
+      OK
+    </button>
+  </div>
+</Fragment>
+`;
