@@ -1,0 +1,13 @@
+.course-list th:nth-child(2) {
+    text-align: left;
+}
+  
+#CourseList th {
+    /* text-align: left; */
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+#CourseList td {
+    text-align: left;
+}
