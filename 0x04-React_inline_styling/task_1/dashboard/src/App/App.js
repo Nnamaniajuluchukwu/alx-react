@@ -12,7 +12,7 @@ import { StyleSheet, css } from 'aphrodite';
 
 
 const styles = StyleSheet.create({
-  container: {
+  body: {
     height: '100vh',
     maxWidth: '100vw'
   },
@@ -63,7 +63,7 @@ export default class App extends Component {
     return (
       <>
         <Notifications displayDrawer={false} listNotification={notifications}/>
-        <div className={css(styles.container)}>
+        <div className={css(styles.body)}>
           <Header />
           {this.props.isLoggedIn ?
             <BodySectionWithMarginBottom title='Course list'>
