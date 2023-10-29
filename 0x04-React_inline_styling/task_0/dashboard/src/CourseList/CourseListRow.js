@@ -3,14 +3,20 @@ import PropTypes from 'prop-types';
 
 
 export default function CourseListRow({ isHeader = false, textFirstCell, textSecondCell = null }) {
+    const styles = {
+        header: {
+            backgroundColor: '#deb5b545'
+        },
+        row: {
+            backgroundColor: '#f5f5f5ab'
+        }
+    }
     return (
         <tr>
             {isHeader ? (
                 textSecondCell ? (
                     <>
-                        <th colSpan={2} style={{
-                            backgroundColor: '#deb5b545'
-                        }}>
+                        <th colSpan={2} style={styles.header}>
                             {textFirstCell}
                         </th>
                         <th>{textSecondCell}</th>
@@ -20,9 +26,7 @@ export default function CourseListRow({ isHeader = false, textFirstCell, textSec
                 )
             ) : (
                 <>
-                    <td style={{
-                        backgroundColor: '#f5f5f5ab'
-                    }}>
+                    <td style={styles.row}>
                         {textFirstCell}
                     </td>
                     <td>{textSecondCell}</td>
