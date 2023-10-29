@@ -3,7 +3,7 @@
 exports[`Notifications Component should match the snapshot 1`] = `
 <Fragment>
   <div
-    className="menuItem_140n9qh"
+    className="menu_140n9qh"
   >
     <p>
       Your notifications

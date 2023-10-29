@@ -7,14 +7,14 @@ import { StyleSheet, css } from "aphrodite";
 
 
 const styles = StyleSheet.create({
-  notifications: {
+  notify: {
     border: '3px dashed #e0354b',
     padding: '1rem',
     width: '30%',
     position: 'absolute',
     right: 0
   },
-  menuItem: {
+  menu: {
     textAlign: 'right'
   }
 });
@@ -55,11 +55,11 @@ export default class Notifications extends Component {
 
     return (
       <>
-        <div className={css(styles.menuItem)}>
+        <div className={css(styles.menu)}>
           <p>Your notifications</p>
         </div>
         {displayDrawer ? (
-          <div className={css(styles.notifications)}>
+          <div className={css(styles.notify)}>
             <p>Here is the list of notifications</p>
             <ul>
               {notifyMessage}

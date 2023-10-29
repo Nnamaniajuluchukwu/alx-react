@@ -7,7 +7,7 @@ import { StyleSheet, css } from "aphrodite";
 
 
 const styles = StyleSheet.create({
-  courseList: {
+  courses: {
     width: '90%',
     margin: 'auto',
     marginTop: '70px',
@@ -27,7 +27,7 @@ export default function CourseList({ listCourses }) {
     }
 
     return (
-        <table className={css(styles.courseList)}>
+        <table className={css(styles.courses)}>
             <thead>
                 <CourseListRow textFirstCell="Available courses" isHeader={true} />
                 <CourseListRow textFirstCell="Course name" textSecondCell="Credit" isHeader={true} />

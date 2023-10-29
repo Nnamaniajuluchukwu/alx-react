@@ -28,7 +28,7 @@ describe('Notifications Component', () => {
     // });
 
     it('should not display div.Notifications when displayDrawer is false', () => {
-        expect(wrapper.find('.notifications').length).toBeFalsy();
+        expect(wrapper.find('.notify').length).toBeFalsy();
     });
 
     it('should match the snapshot', () => {

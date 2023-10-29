@@ -27,7 +27,7 @@ exports[`App Component should match the snapshot 1`] = `
     }
   />
   <div
-    className="container_450dp9"
+    className="body_450dp9"
   >
     <Header />
     <BodySectionWithMarginBottom
