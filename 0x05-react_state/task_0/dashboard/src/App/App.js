@@ -52,18 +52,15 @@ export default class App extends Component {
   }
 
   handleDisplayDrawer() {
-    console.log('handleDisplayDrawer called');
     this.setState({
       displayDrawer: true
     });
-    console.log(this.state.displayDrawer)
   }
 
   handleHideDrawer() {
     this.setState({
       displayDrawer: false
     });
-    console.log(this.state.displayDrawer)
   }
 
   componentDidMount() {
