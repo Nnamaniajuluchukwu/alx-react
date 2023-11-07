@@ -71,7 +71,7 @@ export default class Login extends Component {
                         <input
                             type='password' id='password' autoComplete="on"
                             value={this.state.password} onChange={this.handleChangePassword}></input>
-                        <input type='submit' onSubmit={this.handleLoginSubmit} disabled={!this.state.enableSubmit}></input>
+                        <input type='submit' onClick={this.handleLoginSubmit} disabled={!this.state.enableSubmit}></input>
                     </form>
                 </div>
             </>
