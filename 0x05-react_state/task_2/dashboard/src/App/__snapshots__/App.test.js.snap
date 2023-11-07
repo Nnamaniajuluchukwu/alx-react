@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component should match the snapshot 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "logOut": [Function],
+      "user": Object {
+        "email": "",
+        "isLoggedIn": false,
+        "password": "",
+      },
+    }
+  }
+>
+  <Notifications
+    displayDrawer={false}
+    handleDisplayDrawer={[Function]}
+    handleHideDrawer={[Function]}
+    listNotification={
+      Array [
+        Object {
+          "id": 1,
+          "type": "default",
+          "value": "new course available",
+        },
+        Object {
+          "id": 2,
+          "type": "urgent",
+          "value": "New resume available",
+        },
+        Object {
+          "html": Object {
+            "__html": "<strong>Urgent requirement</strong> - complete by EOD",
+          },
+          "id": 3,
+          "type": "",
+        },
+      ]
+    }
+  />
+  <div
+    className="body_1nciumb"
+  >
+    <Header />
+    <BodySectionWithMarginBottom
+      title="Log in to continue"
+    >
+      <Login
+        logIn={[Function]}
+      />
+    </BodySectionWithMarginBottom>
+    <BodySection
+      title="News from the School"
+    >
+      <p>
+         I love you
+      </p>
+    </BodySection>
+    <div
+      className="footer_1rx33r7"
+    >
+      <Footer />
+    </div>
+  </div>
+</ContextProvider>
+`;
