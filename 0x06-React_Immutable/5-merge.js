@@ -1,6 +1,5 @@
 import { List, Map } from 'immutable';
 
-
 /**
  * Concat two list
  * @param {Array} page1
