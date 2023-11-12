@@ -3,7 +3,7 @@ import { Seq } from 'immutable';
 /**
  * create a sequence and filter the values.
  * @param {Object} object object to filter the value
- * @returns the new object 
+ * @returns the new object
  */
 export default function printBestStudents(object) {
   const seq = Seq(object);
