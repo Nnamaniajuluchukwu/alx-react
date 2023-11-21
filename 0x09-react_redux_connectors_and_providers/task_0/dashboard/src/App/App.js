@@ -13,7 +13,6 @@ import { AppContext, user } from "./AppContext";
 import { connect } from 'react-redux';
 
 
-
 export class App extends React.Component {
   constructor(props) {
     super(props);
@@ -131,6 +130,9 @@ export class App extends React.Component {
   }
 }
 
+// Class component made things complicated for me here, so I'm not sure if
+// works as you expect. But if you have the better solution please create a pull
+// request.
 const mapStateToProps = (state) => {
   return {
     isLoggedIn: state.uiReducer.isLoggedIn
